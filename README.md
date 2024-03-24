@@ -9,7 +9,8 @@ sudo apt install python3.9
 sudo apt install python3-pip
 git clone https://github.com/Explorer-art/RCON-Discord-Bot.git
 cd RCON-Discord-Bot
-pip install -r requirements.txt
+python3.9 -m pip install disnake
+python3.9 -m pip install websockets
 chmod +x start.sh
 ./start.sh
 ```
@@ -18,7 +19,8 @@ chmod +x start.sh
 ```
 git clone https://github.com/Explorer-art/RCON-Discord-Bot.git
 cd RCON-Discord-Bot
-pip install -r requirements.txt
+pip install disnake
+pip install websockets
 start.bat
 ```
 
