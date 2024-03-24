@@ -2,18 +2,9 @@ import disnake
 from disnake.ext import commands
 import asyncio
 from websockets.sync.client import connect
+from config import token, prefix, allowed_ids
 
-config = {
-    "token" : "TOKEN", # Токен бота
-    "prefix" : "$" # Префикс бота
-}
-
-allowed_ids = [640856584595046421] # ID пользователя/ей которые смогут использовать RCON
-
-ip = "92.63.107.40:9001" # IP и порт сервера (порт веб-сервера)
-rcon_password = "nDqNo7WnRd" # RCON пароль
-
-bot = commands.Bot(command_prefix=config["prefix"], intents=disnake.Intents.all())
+bot = commands.Bot(command_prefix=prefix, intents=disnake.Intents.all())
 
 @bot.slash_command()
 async def rcon(ctx, command):
@@ -39,4 +30,4 @@ async def rcon(ctx, command):
 
     await ctx.send(embed=embed)
 
-bot.run(config["token"])
+bot.run(token)
