@@ -5,7 +5,7 @@ from websockets.sync.client import connect
 
 config = {
     "token" : "TOKEN", # Токен бота
-    "prefix" : "$" # Префикс команд бота
+    "prefix" : "$" # Префикс бота
 }
 
 allowed_ids = [640856584595046421] # ID пользователя/ей которые смогут использовать RCON
