@@ -3,7 +3,7 @@
 Данный бот создан для удалённого выполнения команд от имени администратора на игровых серверах в Warnament. Реализовать это позволяет протокол RCON который есть в ядре TCORE.
 
 ## Установка
-> Linux
+##### Linux
 ```
 sudo apt install python3.9
 sudo apt install python3-pip
@@ -14,7 +14,8 @@ chmod +x start.sh
 ./start.sh
 ```
 
-> Windows
+
+##### Windows
 ```
 git clone https://github.com/Explorer-art/RCON-Discord-Bot.git
 cd RCON-Discord-Bot
