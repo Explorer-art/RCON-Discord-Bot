@@ -2,7 +2,7 @@ import disnake
 from disnake.ext import commands
 import asyncio
 from websockets.sync.client import connect
-from config import token, prefix, allowed_ids
+from config import token, prefix, allowed_ids, ip, rcon_password
 
 bot = commands.Bot(command_prefix=prefix, intents=disnake.Intents.all())
 
