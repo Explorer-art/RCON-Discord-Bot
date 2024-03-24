@@ -4,8 +4,8 @@ import asyncio
 from websockets.sync.client import connect
 
 config = {
-    "token" : "MTIyMTEyMjI3NjQ1MjMzNTY0Nw.GUOiUt.1bX8At4e1SZs3FybMw0mC5F9DjwpIjcIGCQZSo",
-    "prefix" : "$"
+    "token" : "TOKEN", # Токен бота
+    "prefix" : "$" # Префикс бота
 }
 
 allowed_ids = [640856584595046421] # ID пользователя/ей которые смогут использовать RCON
